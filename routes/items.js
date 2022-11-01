@@ -80,7 +80,9 @@ router.put('/:id', function (req, res) {
             id: found.id,
             title: req.body.title, // set value of `title` get from req
             order: req.body.order, // set value of `order` get from req
-            completed: req.body.completed // set value of `completed` get from req
+            completed: req.body.completed ,// set value of `completed` get from req
+            createdOn: found.createdOn 
+
         };
 
         // find index of found object from array of data
